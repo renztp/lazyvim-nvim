@@ -3,6 +3,11 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "<leader>;", ":NgQuickSwitchToggle<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>dh", "<cmd>nohl<CR>")
-vim.keymap.set('n', '<C-f>', '/\\c')
+vim.keymap.set("n", "<C-f>", "/\\c")
 vim.keymap.set("n", "<leader>dvo", "<cmd>DiffviewOpen<CR>")
 vim.keymap.set("n", "<leader>dvc", "<cmd>DiffviewClose<CR>")
+vim.keymap.set("n", "<M-l>", "<cmd>BufferLineCycleNext<CR>")
+vim.keymap.set("n", "<M-h>", "<cmd>BufferLineCyclePrev<CR>")
+vim.keymap.set("n", "<F5>", "<cmd>:term python3 %<CR>")
+vim.keymap.set("n", "<leader>ps", "<cmd>w<CR>")
+vim.keymap.set("n", "<leader>pf", LazyVim.pick("live_grep"))
